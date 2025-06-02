@@ -1,0 +1,9 @@
+hostname: "NX-SWITCH-01"
+ntp_servers:
+  primary: "10.1.1.1"
+  secondary: "10.1.1.2"
+vlans:
+  - id: 10
+    name: "MGMT"
+  - id: 20
+    name: "DATA"

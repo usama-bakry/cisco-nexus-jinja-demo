@@ -1,0 +1,5 @@
+site_name: Nexus Config Standards
+theme: material
+nav:
+  - Home: index.md
+  - Base Template: base_template.md

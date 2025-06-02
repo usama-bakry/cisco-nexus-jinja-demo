@@ -1,0 +1,12 @@
+! Basic Cisco Nexus Configuration
+hostname {{ hostname }}
+!
+! NTP Settings
+ntp server {{ ntp_servers.primary }}
+ntp server {{ ntp_servers.secondary }}
+!
+! VLANs
+{% for vlan in vlans %}
+vlan {{ vlan.id }}
+  name {{ vlan.name }}
+{% endfor %}
